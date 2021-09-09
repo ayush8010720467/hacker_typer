@@ -29,5 +29,3 @@ setInterval(()=>{
     let cursor = document.getElementById('cursor');
     cursor.style.color = 'inherit';
 },1000);
-let str = '1\n11\n111';
-document.getElementById('source').innerHTML = str;
