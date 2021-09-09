@@ -17,7 +17,7 @@ function test(){
             }
         }
         let initTyper = initiateTyper();
-        setInterval(initTyper,500);
+        window.addEventListener("keydown", initTyper);
     })
 }
 test();
@@ -29,3 +29,5 @@ setInterval(()=>{
     let cursor = document.getElementById('cursor');
     cursor.style.color = 'inherit';
 },1000);
+let str = '1\n11\n111';
+document.getElementById('source').innerHTML = str;
